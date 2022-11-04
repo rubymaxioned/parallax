@@ -111,16 +111,29 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-header .wrapper { width: 100%; }
+header .wrapper,
+.header-top,
+.header-bottom { width: 100%; }
 
-.header-top {
+.header-top-wrapper {
+  width: 86%;
   margin:  0 auto;
-  border-bottom: 1px solid #F1F1F1;
   display: flex;
   align-items: center;
   font-size: 12px;
-  justify-content: center;
+  justify-content: space-between;
   text-transform: capitalize;
+}
+
+.header-top,
+.header-bottom { border-bottom: 1px solid #F1F1F1; }
+
+.header-bottom-wrapper {
+  width: 86%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .header-top ul {
@@ -144,12 +157,16 @@ header .wrapper { width: 100%; }
 .header-top ul li:nth-of-type(1) a,
 .header-top ul li:nth-of-type(2) a { padding-left: 15px; }
 
-.header-bottom { display: flex; }
+.header-bottom { 
+  padding: 5px 0;
+  display: flex;
+ }
+
 nav ul { display: none; }
 
 .hamburger {
-  width: 30px;
-  height: 24px;
+  width: 16px;
+  height: 10px;
   padding: 6px;
   border: 1px solid;
   border-radius: 3px;
@@ -177,6 +194,8 @@ nav ul { display: none; }
 .hamburger:hover span:nth-of-type(3) { transform: translate(0, -3px) rotate(45deg); }
 
 .header-bottom form { display: none; }
+
+.hamburger:hover .hamburger ~ ul { display: block; }
 /*=================================
   Header styling ends here
 =================================*/  
@@ -184,9 +203,17 @@ nav ul { display: none; }
 /*=================================
   main styling starts here
 =================================*/
+.banner-section { 
+  background: url(/assets/Images/emma-matthews-p6g6S_kXkFc-unsplash.png) no-repeat center center / contain;
+  background-attachment: fixed;
+}
 
-
-
+h2 {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 
 
