@@ -111,6 +111,11 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header {
+  /* margin-bottom: 18px; */
+  box-shadow: 0 2px 10px #bbb;
+}
+
 header .wrapper,
 .header-top,
 .header-bottom { width: 100%; }
@@ -125,6 +130,8 @@ header .wrapper,
   text-transform: capitalize;
 }
 
+.header-top-wrapper a { color: #000; }
+
 .header-top,
 .header-bottom { border-bottom: 1px solid #F1F1F1; }
 
@@ -132,6 +139,7 @@ header .wrapper,
   width: 86%;
   display: flex;
   align-items: center;
+  position: relative;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -150,9 +158,14 @@ header .wrapper,
 }
 
 .header-top ul li:nth-of-type(2) { background: #F1F1F1; }
+.header-top-wrapper ul li:nth-of-type(2) a { color: #7A7A7A; }
 
 .header-top ul li:nth-of-type(1)::before { content: '\f007'; }
-.header-top ul li:nth-of-type(2)::before { content: '\f07a'; }
+
+.header-top ul li:nth-of-type(2)::before { 
+  color: #7A7A7A;
+  content: '\f07a';
+ }
 
 .header-top ul li:nth-of-type(1) a,
 .header-top ul li:nth-of-type(2) a { padding-left: 15px; }
@@ -188,14 +201,39 @@ nav ul { display: none; }
   text-indent: -9999px;
 }
 
-.hamburger:hover .nav-links { display: block; }
+/* .hamburger:hover .nav-links { display: block; } */
 .hamburger:hover span:nth-of-type(1) { transform: translate(0, 3px) rotate(-45deg); }
 .hamburger:hover span:nth-of-type(2) { display: none; }
 .hamburger:hover span:nth-of-type(3) { transform: translate(0, -3px) rotate(45deg); }
 
 .header-bottom form { display: none; }
 
-.hamburger:hover .hamburger ~ ul { display: block; }
+.hamburger:hover ~ ul { display: flex; }
+
+.hamburger:hover ~ ul li a { 
+  padding-left: 10px;
+  color: #fff;
+ }
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+nav ul { 
+  width: 100%;
+  padding: 10px 0;
+  background: #000;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
 /*=================================
   Header styling ends here
 =================================*/  
@@ -203,22 +241,73 @@ nav ul { display: none; }
 /*=================================
   main styling starts here
 =================================*/
-.banner-section { 
-  background: url(/assets/Images/emma-matthews-p6g6S_kXkFc-unsplash.png) no-repeat center center / contain;
+.banner-section .wrapper { 
+  width: 100%;
+  min-height: 200px;
+  background: url(/assets/Images/emma-matthews-p6g6S_kXkFc-unsplash.png) no-repeat center center / cover;
   background-attachment: fixed;
+  position: relative;
+}
+
+.banner-section {
+  margin-top: 15px;
+  background: #F1F1F1;
 }
 
 h2 {
+  margin-bottom: 10px;
+  color: #6F6F6F;
   font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
 
+.parallax {
+  width: 70%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.parallax p {
+  margin-bottom: 10px;
+  font-size: 10px;
+  text-align: justify;
+}
 
+.parallax p:nth-of-type(1) { color: #7A7A7A; }
+.parallax p:nth-last-of-type(2) { color: #4E4E4E; }
 
+.parallax { 
+  padding: 10px 5%;
+  background: rgba(255, 255, 255,0.8); 
+}
 
+/*Product section start*/
+h3 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  color: #232323;
+}
+
+.product-section { padding: 15px 0; }
+.product-section ul li { position: relative; }
+
+.discount {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  flex-direction: column;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/*Product section end*/
 /*=================================
   main styling ends here
 =================================*/
