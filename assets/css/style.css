@@ -366,6 +366,22 @@ h3 {
   background: #30B5D2;
   padding: 3px 2%;position: absolute;
  }
+
+ .product-section .wrapper > a {
+  width: 100%;
+  display: inline-block;
+  color: #7D7C7A;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: end;
+  text-transform: capitalize;
+ }
+
+ .product-section .wrapper > a::after {
+  content: '\f054';
+  position: absolute;
+  font-family: "FontAwesome";
+ }
 /*Product section end*/
 /*=================================
   main styling ends here
