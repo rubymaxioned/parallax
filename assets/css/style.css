@@ -291,7 +291,7 @@ h2 {
 }
 
 .parallax p:nth-of-type(1) { color: #7A7A7A; }
-.parallax p:nth-last-of-type(2) { color: #4E4E4E; }
+.parallax p:nth-of-type(2) { color: #555; }
 
 .parallax { 
   padding: 10px 5%;
@@ -427,6 +427,9 @@ h3 {
 
 .subscribe-section .wrapper > p { text-align: center; }
 
+.parallax p::first-letter,
+.subscribe-section .wrapper p::first-letter { text-transform: uppercase; }
+
 .subscribe-btn,
 .subscribe-btn button { background: #30B5D3; }
 
@@ -513,6 +516,35 @@ footer .wrapper > span {
 
 /*media query starts*/
 
+/*media query for 480-px starts here*/
+@media only screen and (min-width: 480px) {
+.caption { padding: 10px 5%; }
+.caption > span { margin-bottom: 10px;}
+} 
+
+/*media query for 540px starts here*/
+@media only screen and (min-width: 540px) {
+.product-section ul { 
+  margin-bottom: 10px;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-section ul li { flex-basis: 48%; }
+.subscribe-div { 
+  width: 70%;
+  margin: 0 auto; 
+}
+}  
+
+/*media query for 768px starts here*/
+@media only screen and (min-width: 768px) {
+
+
+
+}  
+
 /*media query for 995px starts here*/
 @media only screen and (min-width: 995px) {
 
@@ -520,9 +552,9 @@ footer .wrapper > span {
 
 } 
 
-/*media query for 995px starts here*/
-@media only screen and (min-width: 995px) {
+/*media query for 1024px starts here*/
+@media only screen and (min-width: 1024px) {
 
 
 
-}  
+} 
