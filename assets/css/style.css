@@ -108,6 +108,12 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /*=================================
   Header styling starts here
 =================================*/
@@ -185,7 +191,6 @@ nav ul { display: none; }
   border-radius: 3px;
   display: flex;
   align-items: center;
-  background-color: #A19FA6;
   color: #fff;
   flex-direction: column;
   justify-content: center;
@@ -393,6 +398,57 @@ h3 {
   transform: translate(-50%, -50%);
 }
 /*Product section end*/
+
+/*Subscribe section start*/
+.subscribe-section { 
+  padding: 15px 0;
+  box-shadow: 0 1px 5px #bbb;
+}
+
+.subscribe-section .wrapper { 
+  display: flex;
+  flex-direction: column; 
+}
+
+.subscribe-section .wrapper p {
+  margin-bottom: 10px;
+  color: #777;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: justify;
+}
+
+.subscribe-section .wrapper > p { text-align: center; }
+
+.subscribe-btn,
+.subscribe-btn button { background: #30B5D3; }
+
+.subscribe-btn button { border: none; }
+
+.subscribe-div form {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.email { flex-basis: 80%; }
+
+.subscribe-btn { 
+  display: flex; 
+  flex-basis: 20%;
+}
+
+.email input { 
+  width: 100%;
+  padding: 5px 5%;
+  border: 1px solid #B4B4B4;
+  box-sizing: border-box;
+ }
+
+ .email input:focus { outline: none; }
+/* .email input::placeholder { padding: 15px; } */
+
+/*Subscribe section end*/
 /*=================================
   main styling ends here
 =================================*/
@@ -400,7 +456,7 @@ h3 {
 /*=================================
   footer styling starts here
 =================================*/ 
-
+footer .wrapper { padding: 15px 0; }
 
 
 
