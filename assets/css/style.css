@@ -136,6 +136,9 @@ header .wrapper,
   text-transform: capitalize;
 }
 
+.header-top-wrapper a:hover,
+div.header-top ul li:nth-child(2) a:hover { color: #30B5D3; }
+ 
 .header-top-wrapper a { color: #000; }
 
 .header-top,
@@ -436,6 +439,9 @@ h3 {
   font-weight: bold;
  }
 
+ .subscribe-btn button:hover,
+ .all-products a:hover { color: #0000FF; }
+
 .subscribe-div form {
   width: 100%;
   margin-bottom: 10px;
@@ -489,6 +495,8 @@ footer .wrapper > ul > li { margin-bottom: 10px; }
   font-size: 12px;
 }
 
+.footer-content li a:hover { color: #30B5D3; }
+
 .footer-content li a::first-letter { text-transform: uppercase; }
 .footer-content li a { color: #777; }
 .footer-content li { margin-bottom: 3px; }
@@ -504,8 +512,16 @@ footer .wrapper > span {
 =================================*/ 
 
 /*media query starts*/
+
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+@media only screen and (min-width: 995px) {
+
+
+
+} 
+
+/*media query for 995px starts here*/
+@media only screen and (min-width: 995px) {
 
 
 
