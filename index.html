@@ -2,8 +2,8 @@
 <html lang="en"> 
   <head>
     <meta charset="utf-8">
-    <title>Client</title>
-    <meta name="description" lang="en" content="">
+    <title>My Store</title>
+    <meta name="description" lang="en" content="E-Commerce">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
@@ -15,22 +15,22 @@
       <!--header section start-->
       <header>
         <div class="header-top">
-          <span><a href="#FIXME" target="_blank" rel="noopener noreferrer" title="Contact Us">contact us</a></span>
+          <a href="#FIXME" title="Contact Us">contact us</a>
           <ul>
-            <li><a href="#FIXME" target="_blank" rel="noopener noreferrer" title="Sign In">sign in</a></li>
-            <li><a href="#FIXME" target="_blank" rel="noopener noreferrer" title="Cart">cart</a></li>
+            <li><a href="#FIXME" title="Sign In">sign in</a></li>
+            <li><a href="#FIXME" title="Cart">cart</a></li>
           </ul>
         </div>
         <div class="header-bottom">
-          <h1><a href="#FIXME" target="_blank" rel="noopener noreferrer" title="Logo"><img src="https://placehold.jp/50x20.png"></a></h1>
+          <h1><a href="#FIXME" title="Logo"><img src="https://placehold.jp/50x20.png"></a></h1>
           <nav>
             <ul>
-              <li><a href="#FIXME" target="_blank" rel="noopener noreferrer" title="Clothes">clothes</a></li>
-              <li><a href="#FIXME" target="_blank" rel="noopener noreferrer" title="Accessories">accessories</a></li>
-              <li><a href="#FIXME" target="_blank" rel="noopener noreferrer" title="Art">art</a></li>
+              <li><a href="#FIXME" title="Clothes">clothes</a></li>
+              <li><a href="#FIXME" title="Accessories">accessories</a></li>
+              <li><a href="#FIXME" title="Art">art</a></li>
             </ul>
           </nav>
-          <form method="get">
+          <form action="#FIXME" method="get">
             <div class="search-div">
               <input type="search" name="search" placeholder="search our catalog">
             </div>
@@ -46,9 +46,11 @@
         <!--banner section start-->
         <div class="banner-section">
           <div class="wrapper">
-            <h2>jx media parallax module</h2>
-            <p>by means of this module, it is possible to add video, text, image layers</p>
-            <p>add a background image or video to some blocks on the site with multi-layered parallax effect.</p>
+            <div class="parallax">
+              <h2>jx media parallax module</h2>
+              <p>by means of this module, it is possible to add video, text, image layers</p>
+              <p>add a background image or video to some blocks on the site with multi-layered parallax effect.</p>
+            </div>
           </div>
         </div>
         <!--banner section end-->
@@ -59,7 +61,7 @@
             <h3>popular products</h3>
             <ul>
               <li>
-                <div class="new-div">
+                <div class="discount">
                   <span>-20%</span>
                   <span>new</span>
                 </div>
@@ -67,13 +69,13 @@
                 <div class="caption">
                   <span>hummingbird printed t-shirt</span>
                   <div class="price">
-                    <span>$23.90</span>
+                    <span class="before-discount">$23.90</span>
                     <span>$19.12</span>
                   </div>
                 </div>
               </li>
               <li>
-                <div class="new-div">
+                <div class="discount">
                   <span>-20%</span>
                   <span>new</span>
                 </div>
@@ -81,7 +83,7 @@
                 <div class="caption">
                   <span>hummingbird printed t-shirt</span>
                   <div class="price">
-                    <span>$35.90</span>
+                    <span class="before-discount">$35.90</span>
                     <span>$28.72</span>
                   </div>
                 </div>
@@ -147,7 +149,7 @@
                 </div>
               </li>
             </ul>
-            <span>all products</span>
+            <a href="#FIXME" title="All Products"><span>all products</span></a>
           </div>
         </div>
         <!--Products section end-->
@@ -157,12 +159,12 @@
           <div class="wrapper">
             <p>get our latest news and special sales</p>
             <div class="subscribe-div">
-              <form method="get">
+              <form action="#FIXME"  method="get">
                 <div class="email">
                   <input type="email" name="email" placeholder="your email address">
                 </div>
                 <div class="subscribe-btn">
-                  <button type="button">subscribe</button>
+                  <button type="subscribe">subscribe</button>
                 </div>
               </form>
               <p>you may unsubscribe at any moment. <span>for</span> that purpose, please find our contact info in the legal notice</p>
@@ -178,45 +180,44 @@
           <ul>
             <li>
               <h4>products</h4>
-              <div class="footer-text">
-                <span>price drop</span>
-                <span>new products</span>
-                <span>best sales</span>
-              </div>
+                <ul class="footer-content">
+                  <li><a href="#FIXME">price drop</a></li>
+                  <li><a href="#FIXME">new products</a></li>
+                  <li><a href="#FIXME">best sales</a></li>
+                </ul>
             </li>
             <li>
               <h4>our company</h4>
-              <div class="footer-text">
-                <span>delivery</span>
-                <span>legal notice</span>
-                <span>terms and conditions of use</span>
-                <span>about us</span>
-                <span>secure payment</span>
-                <span>contact us</span>
-                <span>sitemap</span>
-                <span>stores</span>
-              </div>
+              <ul class="footer-content">
+                <li><a href="#FIXME">delivery</a></li>
+                <li><a href="#FIXME">legal notice</a></li>
+                <li><a href="#FIXME">terms and conditions of use</a></li>
+                <li><a href="#FIXME">about us</a></li>
+                <li><a href="#FIXME">secure payment</a></li>
+                <li><a href="#FIXME">contact us</a></li>
+                <li><a href="#FIXME">sitemap</a></li>
+                <li><a href="#FIXME">stores</a></li>
+              </ul>
             </li>
             <li>
               <h4>your account</h4>
-              <div class="footer-text">
-                <span>personal info</span>
-                <span>orders</span>
-                <span>credit slips</span>
-                <span>addresses</span>
-              </div>
+              <ul class="footer-content">
+                <li><a href="#FIXME">personal info</a></li>
+                <li><a href="#FIXME">orders</a></li>
+                <li><a href="#FIXME">credit slips</a></li>
+                <li><a href="#FIXME">addresses</a></li>
+              </ul>
             </li>
             <li>
               <h4>your account</h4>
-              <div class="footer-text">
-                <span>shop name</span>
-                <span>united states</span>
-                <a href="mailto:livedemoadmin@templatemonster.com">email us: livedemo-</a>
-                <span>admin@templatemonster.com</span>
-              </div>
+              <ul class="footer-content">
+                <li><a href="#FIXME">shop name</a></li>
+                <li><a href="#FIXME">united states</a></li>
+                <li><a href="mailto:livedemoadmin@templatemonster.me">email us: livedemo-admin@templatemonster.me</a></li>
+              </ul>
             </li>
           </ul>
-          <span>&#169; 2019 - ecommerce software by <span>prestashop</span></span>
+          <span>&#169; 2019 - Ecommerce software by PrestaShop&#8482;</span>
         </div>  
       </footer>
       <!--footer section end-->
