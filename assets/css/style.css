@@ -536,19 +536,35 @@ footer .wrapper > span {
   width: 70%;
   margin: 0 auto; 
 }
+
+footer .wrapper > ul > li { flex-basis: 35%; }
+
+footer .wrapper > ul {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
 }  
 
 /*media query for 768px starts here*/
 @media only screen and (min-width: 768px) {
+.parallax { 
+  width: 60%;
+  line-height: 15px
+ }
 
-
-
+.parallax p { font-size: 11px; }
+.subscribe-div { width: 60%; }
 }  
+
+.parallax p { font-size: 11px; }
 
 /*media query for 995px starts here*/
 @media only screen and (min-width: 995px) {
-
-
+.parallax { padding: 20px 0; }
+h2 { font-size: 16px; }
+.parallax p { font-size: 15px; }
 
 } 
 
