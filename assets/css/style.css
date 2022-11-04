@@ -296,7 +296,11 @@ h3 {
   color: #232323;
 }
 
-.product-section { padding: 15px 0; }
+.product-section { 
+  padding: 15px 0;
+  background-color: #F1F1F1;
+}
+
 .product-section ul li { position: relative; }
 
 .discount {
@@ -365,23 +369,29 @@ h3 {
   top: 10px;
   background: #30B5D2;
   padding: 3px 2%;position: absolute;
- }
+}
 
- .product-section .wrapper > a {
-  width: 100%;
+.all-products > a {
+  width: 95%;
   display: inline-block;
+  position: relative;
   color: #7D7C7A;
   font-size: 12px;
   font-weight: bold;
   text-align: end;
   text-transform: capitalize;
- }
+  margin-right: 16px;
+}
 
- .product-section .wrapper > a::after {
-  content: '\f054';
+.all-products > a::after {
+  margin-left: 10px;
   position: absolute;
+  top: 50%;
+  content: '\f054';
   font-family: "FontAwesome";
- }
+  font-size: 10px;
+  transform: translate(-50%, -50%);
+}
 /*Product section end*/
 /*=================================
   main styling ends here
