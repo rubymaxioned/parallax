@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 /* ==========================================================================
    1. CSS Reset Code
    ========================================================================== */
@@ -109,10 +110,11 @@ li {
   margin: 0 auto;
 }
 
-* {
+html * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 /*=================================
   Header styling starts here
@@ -132,10 +134,10 @@ header .wrapper {
   align-items: center;
   font-size: 12px;
   justify-content: space-between;
-  text-transform: capitalize;
 }
  
 .header-top a { color: #000; }
+.header-top a::first-letter { text-transform: uppercase; }
 
 /* .header-bottom-wrapper {
   width: 86%;
@@ -674,6 +676,65 @@ footer .wrapper > ul > li { flex-basis: 24%; }
 
 /*media query for 1536px starts here*/
 @media only screen and (min-width: 1536px) {
-.header-top { width: 67.5%; }
+.header-top,
+.header-bottom,
+.banner-section .wrapper,
+.product-section .wrapper,
+.subscribe-section .wrapper,
+footer .wrapper { 
+  width: 60%;
+}
 
+.parallax { width: 100%; }
+header .wrapper { max-width: 1600px; }
+.header-top ul li { padding: 15px 6% 8px 6%; }
+.header-top ul { flex-basis: 26%; }
+
+.header-top ul li:nth-of-type(1) a, 
+.header-top ul li:nth-of-type(2) a { padding-left: 17px; }
+header > div:nth-child(1) { margin-bottom: 13px; }
+
+h1 img {
+  width: 80px;
+  height: 22px
+}
+
+nav ul li a {
+  width: 80px;
+  height: 22px;
+  font-size: 13px;
+}
+
+.header-bottom nav { flex-basis: 48%; }
+nav > ul > li:nth-child(2) { margin-left: -23px; }
+nav ul { gap: 20px; }
+
+.search-div input {
+  width: 204px;
+  height: 35px;
+}
+
+.header-bottom { margin-bottom: 16px; }
+.banner-section { margin-top: 20px; }
+.parallax { padding: 45px 5% 40px 3%; }
+
+h2 {
+  margin-bottom: 0px; 
+  font-size: 21px;
+}
+
+.parallax p { text-align: center; }
+.banner-section { min-height: 190px; }
+.product-section { padding: 0px; }
+
+h3 {
+  margin-bottom: 16px;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.product-section ul { 
+  width: 97%;
+  margin: 0 auto;
+ }
 }
