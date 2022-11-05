@@ -117,41 +117,34 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-header {
-  /* margin-bottom: 18px; */
-  box-shadow: 0 2px 10px #bbb;
-}
+header { box-shadow: 0 2px 10px #bbb; }
 
-header .wrapper,
+header .wrapper { 
+  width: 100%;
+  border-bottom: 1px solid #F1F1F1;
+ }
+
 .header-top,
-.header-bottom { width: 100%; }
-
-.header-top-wrapper {
+.header-bottom { 
   width: 86%;
-  margin:  0 auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   font-size: 12px;
   justify-content: space-between;
   text-transform: capitalize;
 }
-
-.header-top-wrapper a:hover,
-div.header-top ul li:nth-child(2) a:hover { color: #30B5D3; }
  
-.header-top-wrapper a { color: #000; }
+.header-top a { color: #000; }
 
-.header-top,
-.header-bottom { border-bottom: 1px solid #F1F1F1; }
-
-.header-bottom-wrapper {
+/* .header-bottom-wrapper {
   width: 86%;
   display: flex;
   align-items: center;
   position: relative;
   justify-content: space-between;
   margin: 0 auto;
-}
+} */
 
 .header-top ul {
   display: flex;
@@ -168,7 +161,6 @@ div.header-top ul li:nth-child(2) a:hover { color: #30B5D3; }
 
 .header-top ul li:nth-of-type(2) { background: #F1F1F1; }
 .header-top-wrapper ul li:nth-of-type(2) a { color: #7A7A7A; }
-
 .header-top ul li:nth-of-type(1)::before { content: '\f007'; }
 
 .header-top ul li:nth-of-type(2)::before { 
@@ -182,6 +174,7 @@ div.header-top ul li:nth-child(2) a:hover { color: #30B5D3; }
 .header-bottom { 
   padding: 5px 0;
   display: flex;
+  position: relative;
  }
 
 nav ul { 
@@ -205,15 +198,14 @@ nav ul {
 
 .bar {
   width: 19px;
-  height: 2px;
+  height: 2.5px;
   padding: 0px;
-  margin: 2px;
+  margin: 1.5px;
   display: block;
   background-color: #3B3B3B;
-  text-indent: -9999px;
+  text-indent: -9999px
 }
 
-/* .hamburger:hover .nav-links { display: block; } */
 .hamburger:hover span:nth-of-type(1) { transform: translate(0, 3px) rotate(-45deg); }
 .hamburger:hover span:nth-of-type(2) { display: none; }
 .hamburger:hover span:nth-of-type(3) { transform: translate(0, -3px) rotate(45deg); }
@@ -253,18 +245,15 @@ nav ul {
 /*=================================
   main styling starts here
 =================================*/
-.banner-section .wrapper { 
-  width: 100%;
+.banner-section {
   min-height: 200px;
+  margin-top: 15px;
   background: url(/assets/Images/emma-matthews-p6g6S_kXkFc-unsplash.png) no-repeat center center / cover;
   background-attachment: fixed;
   position: relative;
 }
 
-.banner-section {
-  margin-top: 15px;
-  background: #F1F1F1;
-}
+main { background: #F1F1F1; }
 
 h2 {
   margin-bottom: 10px;
@@ -349,7 +338,7 @@ h3 {
 
 .caption { padding: 5px 5%; }
 
-.caption > span { 
+h4 { 
   width: 100%;
   margin-bottom: 5px;
   display: inline-block;
@@ -478,7 +467,7 @@ h3 {
 =================================*/ 
 footer .wrapper { padding: 15px 0; }
 
-h4 { 
+h5 { 
   margin-bottom: 10px;
   font-size: 12px;
   font-weight: bold;
@@ -519,7 +508,7 @@ footer .wrapper > span {
 /*media query for 480-px starts here*/
 @media only screen and (min-width: 480px) {
 .caption { padding: 10px 5%; }
-.caption > span { margin-bottom: 10px;}
+h5 { margin-bottom: 10px;}
 } 
 
 /*media query for 540px starts here*/
@@ -549,6 +538,9 @@ footer .wrapper > ul {
 
 /*media query for 768px starts here*/
 @media only screen and (min-width: 768px) {
+.header-top a:hover,
+.header-top ul li:nth-child(2) a:hover { color: #30B5D3; }
+
 .parallax { 
   width: 60%;
   line-height: 15px
