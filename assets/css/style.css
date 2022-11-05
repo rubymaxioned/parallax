@@ -256,9 +256,12 @@ nav ul {
 }
 
 .banner-section .wrapper {
-  min-height: 200px;
-  position: relative;
+  min-height: 150px;
+  /* position: relative; */
   margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main { background: #F1F1F1; }
@@ -272,14 +275,14 @@ h2 {
   text-align: center;
 }
 
-.parallax {
+/* .parallax {
   width: 70%;
   margin: 0 auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 .parallax p {
   margin-bottom: 10px;
@@ -310,8 +313,6 @@ h3 {
   background-color: #F1F1F1;
 }
 
-.product-section ul li { position: relative; }
-
 .discount {
   display: flex;
   position: absolute;
@@ -332,7 +333,7 @@ h3 {
 .discount span:nth-of-type(2) { background-color: #30B5D2; }
 
 .product-section ul li {
-  margin: 10px 0;
+  /* margin: 10px 0; */
   /* display: flex; */
   position: relative;
   /* flex-direction: column; */
@@ -340,8 +341,10 @@ h3 {
 }
 
 .product-section ul { 
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
+  gap: 15px
 }
 
 .caption { padding: 5px 5%; }
@@ -597,8 +600,9 @@ h4 { margin-bottom: 10px; }
 nav ul {
   display: flex;
   position: static;
-  flex-direction: row;
   background: #fff;
+  flex-direction: row;
+  gap: 15px;
   justify-content: flex-start;
 }
 
@@ -647,10 +651,29 @@ nav ul li a {
 
 .search-div input { padding: 3px;}
 
-.parallax {
+/* .parallax {
   top: 0px;
   transform: initial;
   position: absolute;
   margin: 0 auto;
+} */
+
+.banner-section .wrapper { align-items: initial; }
+.product-section ul { gap: 23px; }
+.product-section ul li { flex-basis: 23%; }
+h4 { font-size: 12px; }
+.price { font-size: 13px; }
+footer .wrapper > ul { 
+  gap: 0px;
+  justify-content: space-between;
 }
+
+footer .wrapper > ul > li { flex-basis: 24%; }
+}
+
+
+/*media query for 1536px starts here*/
+@media only screen and (min-width: 1536px) {
+.header-top { width: 67.5%; }
+
 }
