@@ -238,6 +238,8 @@ nav ul {
   text-transform: uppercase;
 }
 
+.search-div input { border: 1px solid #C0C0C0; }
+.search-div input::placeholder { color: #999; }
 /*=================================
   Header styling ends here
 =================================*/  
@@ -251,6 +253,12 @@ nav ul {
   background: url(/assets/Images/emma-matthews-p6g6S_kXkFc-unsplash.png) no-repeat center center / cover;
   background-attachment: fixed;
   position: relative;
+}
+
+.banner-section .wrapper {
+  min-height: 200px;
+  position: relative;
+  margin-top: 15px;
 }
 
 main { background: #F1F1F1; }
@@ -454,9 +462,8 @@ h4 {
   box-sizing: border-box;
  }
 
- .email input:focus { outline: none; }
-/* .email input::placeholder { padding: 15px; } */
-
+.email input:focus { outline: none; }
+.email input::placeholder { color: #ccc; }
 /*Subscribe section end*/
 /*=================================
   main styling ends here
@@ -554,15 +561,96 @@ footer .wrapper > ul {
 
 /*media query for 995px starts here*/
 @media only screen and (min-width: 995px) {
-.parallax { padding: 20px 0; }
-h2 { font-size: 16px; }
-.parallax p { font-size: 15px; }
+.parallax { 
+  padding: 20px 5%;
+  line-height: 22px;
+}
 
+h2 { font-size: 16px; }
+.parallax p,
+h3 { font-size: 15px; }
+
+.header-top,
+.discount,
+h4,
+.price,
+.new,
+.all-products > a,
+h5 { font-size: 14px; }
+
+.before-discount,
+.subscribe-section .wrapper p,
+.footer-content { font-size: 13px; }
+
+h4 { margin-bottom: 10px; }
+.subscribe-btn button { font-size: 12px; }
+.header-top a { color: #444; }
+.header-top ul li:nth-of-type(2) a { color: #888; }
 } 
 
 /*media query for 1024px starts here*/
 @media only screen and (min-width: 1024px) {
 
+.header-bottom { flex-direction: row; }
+.hamburger { display: none; }
 
+nav ul {
+  display: flex;
+  position: static;
+  flex-direction: row;
+  background: #fff;
+  justify-content: flex-start;
+}
 
-} 
+nav ul li a { 
+  font-size: 12px;
+  color: #888;
+  font-weight: bold;
+}
+
+.header-bottom nav { flex-basis: 50%; }
+
+.header-bottom form { 
+  display: flex;
+  align-items: center;
+}
+
+/* .submit { 
+  text-indent: -999px;
+  position: absolute;
+  right: 10px;
+} */
+
+.submit::before {
+  position: absolute;
+  font-family: "FontAwesome";
+  content: '\f002';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search-div { position: relative; }
+
+.submit { 
+  position: absolute;
+  right: 5px;
+}
+
+.submit button { 
+  width: 20px;
+  height: 18px;
+  background-color: #fff;
+  border: none;
+  text-indent: -9999px;
+}
+
+.search-div input { padding: 3px;}
+
+.parallax {
+  top: 0px;
+  transform: initial;
+  position: absolute;
+  margin: 0 auto;
+}
+}
